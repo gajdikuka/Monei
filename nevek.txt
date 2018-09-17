@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Gajd�r Kriszti�n
 Madaras J�zsef
 L�z�r Kret�n D�vd
+=======
+﻿Gajdár Krisztián
+Horváth Dániel
+Lázár Dávid
+>>>>>>> 3baba1d4e4f50c73a30bd375bc23184b166a244d
