@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 Gajdár Krisztián
 Madaras József
-Lázár Kretén Dávd
-=======
-ï»¿GajdÃ¡r KrisztiÃ¡n
-HorvÃ¡th DÃ¡niel
-LÃ¡zÃ¡r DÃ¡vid
->>>>>>> 3baba1d4e4f50c73a30bd375bc23184b166a244d
+Lázár Dávd
+Szabó Patrik
+Horváth Dániel
+
