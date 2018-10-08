@@ -9,12 +9,17 @@ design_teszt
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\App.xaml
 4-1884773339
+=======
+F:\labor app\design teszt\design teszt\App.xaml
+91233415972
+>>>>>>> 306ddb55bd14842b2bf2c46fe2217ceb6569356e
 
-9-2074476272
+14-1117988771
 131569487696
-MainWindow.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\UserControl1.xaml;
+MainWindow.xaml;Views\Elfelejtett1View.xaml;Views\Elfelejtett2View.xaml;Views\Elfelejtett3View.xaml;Views\Elfelejtett4View.xaml;Views\fokepernyo.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\RegistrationView2.xaml;
 
 False
 

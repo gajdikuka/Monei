@@ -14,12 +14,9 @@ F:\labor app\design teszt\design teszt\obj\Debug\design teszt.exe
 F:\labor app\design teszt\design teszt\obj\Debug\design teszt.pdb
 F:\labor app\design teszt\design teszt\obj\Debug\Views\LoginView.g.cs
 F:\labor app\design teszt\design teszt\obj\Debug\Views\LoginView.baml
-F:\labor app\design teszt\design teszt\obj\Debug\GeneratedInternalTypeHelper.g.cs
-F:\labor app\design teszt\design teszt\obj\Debug\design teszt.csprojAssemblyReference.cache
-F:\labor app\design teszt\design teszt\obj\Debug\Views\UserControl1.g.cs
-F:\labor app\design teszt\design teszt\obj\Debug\Views\UserControl1.baml
 F:\labor app\design teszt\design teszt\obj\Debug\Views\RegistrationView.g.cs
 F:\labor app\design teszt\design teszt\obj\Debug\Views\RegistrationView.baml
+<<<<<<< HEAD
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\bin\Debug\design teszt.exe.config
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\design teszt.exe
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\design teszt.pdb
@@ -40,3 +37,18 @@ C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\Views\Us
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\design teszt.g.resources
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\design_teszt.Properties.Resources.resources
 C:\Users\user\Documents\GitHub\Monei\alkalmazás\design teszt\obj\Debug\design teszt.csproj.GenerateResource.Cache
+=======
+F:\labor app\design teszt\design teszt\obj\Debug\Views\fokepernyo.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\fokepernyo.baml
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett1View.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett1View.baml
+F:\labor app\design teszt\design teszt\obj\Debug\design teszt.csprojAssemblyReference.cache
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett2View.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett3View.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett4View.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett2View.baml
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett3View.baml
+F:\labor app\design teszt\design teszt\obj\Debug\Views\Elfelejtett4View.baml
+F:\labor app\design teszt\design teszt\obj\Debug\Views\RegistrationView2.g.cs
+F:\labor app\design teszt\design teszt\obj\Debug\Views\RegistrationView2.baml
+>>>>>>> 306ddb55bd14842b2bf2c46fe2217ceb6569356e
