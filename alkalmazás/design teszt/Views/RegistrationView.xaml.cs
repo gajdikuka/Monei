@@ -27,14 +27,6 @@ namespace design_teszt.Views
 
         public static event EventHandler Regisztracio;
         public static event EventHandler Vissza;
-        public static event EventHandler SomethingHappened;
-        private void MakeSomethingHappen(EventArgs e)
-        {
-            if (Regisztracio != null)
-            {
-                Regisztracio(this, e);
-            }
-        }
 
         private void register(object sender, RoutedEventArgs e)
         {

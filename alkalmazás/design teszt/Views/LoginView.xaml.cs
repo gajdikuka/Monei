@@ -27,7 +27,7 @@ namespace design_teszt.Views
 
         public static event EventHandler Bejelentkezes;
         public static event EventHandler Regisztracio;
-
+        public static event EventHandler Elfelejtett;
 
         public void login(object sender, RoutedEventArgs e)
         {
@@ -42,6 +42,14 @@ namespace design_teszt.Views
             if (Regisztracio != null)
             {
                 Regisztracio(this, e);
+            }
+        }
+
+        private void forgotten(object sender, RoutedEventArgs e)
+        {
+            if (Elfelejtett != null)
+            {
+                Elfelejtett(this, e);
             }
         }
     }

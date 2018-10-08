@@ -7,7 +7,8 @@
         xmlns:viewmodels="clr-namespace:design_teszt.ViewModels"
         xmlns:views="clr-namespace:design_teszt.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="720" Width="1280"
+        MinHeight="504" MinWidth="896">
     <Grid Name="maingrid">
     </Grid>
 </Window>
