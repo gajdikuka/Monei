@@ -30,6 +30,8 @@ namespace design_teszt.Views
 
         private void register(object sender, RoutedEventArgs e)
         {
+
+
             if (Regisztracio != null)
             {
                 Regisztracio(this, e);

@@ -52,5 +52,15 @@ namespace design_teszt.Views
                 Elfelejtett(this, e);
             }
         }
+
+        private void txtUser_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtUserName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

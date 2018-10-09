@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\labor app\design teszt\design teszt\obj\Debug\
+D:\Files\2018\PROG\Visual\Projects\alkalmazás\design teszt\obj\Debug\
 design_teszt
 none
 false
 DEBUG;TRACE
-F:\labor app\design teszt\design teszt\App.xaml
-91233415972
+D:\Files\2018\PROG\Visual\Projects\alkalmazás\design teszt\App.xaml
+91335670903
 
-18717162879
+20285611713
 131569487696
-MainWindow.xaml;Views\Elfelejtett1View.xaml;Views\Elfelejtett2View.xaml;Views\Elfelejtett3View.xaml;Views\Elfelejtett4View.xaml;Views\fokepernyo.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\RegistrationView2.xaml;
+MainWindow.xaml;Views\ForgottenPwdView1.xaml;Views\ForgottenPwdView2.xaml;Views\ForgottenPwdView3.xaml;Views\ForgottenPwdView4.xaml;Views\Main.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\RegistrationView2.xaml;
 
-False
+True
 

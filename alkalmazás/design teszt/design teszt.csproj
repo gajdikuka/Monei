@@ -55,21 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModels\LoginViewModel.cs" />
-    <Compile Include="Views\Elfelejtett1View.xaml.cs">
-      <DependentUpon>Elfelejtett1View.xaml</DependentUpon>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="Views\ForgottenPwdView1.xaml.cs">
+      <DependentUpon>ForgottenPwdView1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Elfelejtett2View.xaml.cs">
-      <DependentUpon>Elfelejtett2View.xaml</DependentUpon>
+    <Compile Include="Views\ForgottenPwdView2.xaml.cs">
+      <DependentUpon>ForgottenPwdView2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Elfelejtett3View.xaml.cs">
-      <DependentUpon>Elfelejtett3View.xaml</DependentUpon>
+    <Compile Include="Views\ForgottenPwdView3.xaml.cs">
+      <DependentUpon>ForgottenPwdView3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Elfelejtett4View.xaml.cs">
-      <DependentUpon>Elfelejtett4View.xaml</DependentUpon>
+    <Compile Include="Views\ForgottenPwdView4.xaml.cs">
+      <DependentUpon>ForgottenPwdView4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\fokepernyo.xaml.cs">
-      <DependentUpon>fokepernyo.xaml</DependentUpon>
+    <Compile Include="Views\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -92,23 +94,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\Elfelejtett1View.xaml">
+    <Page Include="Views\ForgottenPwdView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Elfelejtett2View.xaml">
+    <Page Include="Views\ForgottenPwdView2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Elfelejtett3View.xaml">
+    <Page Include="Views\ForgottenPwdView3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Elfelejtett4View.xaml">
+    <Page Include="Views\ForgottenPwdView4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\fokepernyo.xaml">
+    <Page Include="Views\Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,9 +162,7 @@
   <ItemGroup>
     <Resource Include="Kepek\logo_feher.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Kepek\fokepernyo.png" />
   </ItemGroup>
