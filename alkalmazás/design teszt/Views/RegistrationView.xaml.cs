@@ -30,13 +30,13 @@ namespace design_teszt.Views
 
         private void register(object sender, RoutedEventArgs e)
         {
-
-
             if (Regisztracio != null)
             {
+                if(IsValid)
                 Regisztracio(this, e);
             }
         }
+        
 
         private void back(object sender, RoutedEventArgs e)
         {

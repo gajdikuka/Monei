@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,7 +57,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Validation\RequiredValidation.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Views\ForgottenPwdView1.xaml.cs">
       <DependentUpon>ForgottenPwdView1.xaml</DependentUpon>
@@ -154,17 +155,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Kepek\logo.png" />
+    <Resource Include="Pictures\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Kepek\háttér.png" />
+    <Resource Include="Pictures\háttér.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Kepek\logo_feher.png" />
+    <Resource Include="Pictures\logo_feher.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="Kepek\fokepernyo.png" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\fokepernyo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
