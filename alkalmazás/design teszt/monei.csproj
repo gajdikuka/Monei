@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.18.3.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -57,6 +61,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\DataBaseConnection.cs" />
+    <Compile Include="Models\DataBaseManager.cs" />
+    <Compile Include="Models\Transaction.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Validation\RequiredValidation.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Views\ForgottenPwdView1.xaml.cs">
@@ -146,6 +155,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,9 +173,7 @@
   <ItemGroup>
     <Resource Include="Pictures\logo_feher.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Pictures\fokepernyo.png" />
   </ItemGroup>
