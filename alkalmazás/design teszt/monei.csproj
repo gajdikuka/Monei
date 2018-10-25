@@ -62,6 +62,7 @@
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\DataBaseCommands.cs" />
     <Compile Include="Models\DataBaseConnection.cs" />
     <Compile Include="Models\DataBaseManager.cs" />
     <Compile Include="Models\Transaction.cs" />

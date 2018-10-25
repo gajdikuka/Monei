@@ -17,6 +17,7 @@ namespace design_teszt.Models
         protected OracleConnection getConnection()
         {
             OracleConnection connection = new OracleConnection();
+            connection.ConnectionString = connectionString;
             connection.Open();
             return connection;
         }

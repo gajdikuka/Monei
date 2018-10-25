@@ -10,17 +10,16 @@ namespace design_teszt.Models
 {
     class DataBaseManager : DataBaseConnection
     {
-        public string getPassword(User user)
+        static public OracleDataReader sendTextCommand(string command)
         {
             
             OracleConnection connection = getConnection();
             connection.Open();
-            OracleCommand command = new OracleCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT password FROM user where userid = " + user.Password;
-            command.Connection = connection;
-            OracleDataReader reader = command.ExecuteReader();
-            return reader.ToString();
+            OracleCommand oracleCommand = new OracleCommand();
+            oracleCommand.CommandType = CommandType.Text;
+            oracleCommand.CommandText = command;
+            oracleCommand.Connection = connection;
+            return oracleCommand.ExecuteReader();
         }
 
     }
