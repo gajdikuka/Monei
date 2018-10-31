@@ -63,3 +63,6 @@ C:\Users\tesa3\Downloads\MONEi\202MoneiBasicValidation\design teszt\obj\Debug\Vi
 C:\Users\tesa3\Downloads\MONEi\202MoneiBasicValidation\design teszt\obj\Debug\design teszt.g.resources
 C:\Users\tesa3\Downloads\MONEi\202MoneiBasicValidation\design teszt\obj\Debug\design_teszt.Properties.Resources.resources
 C:\Users\tesa3\Downloads\MONEi\202MoneiBasicValidation\design teszt\obj\Debug\monei.csproj.GenerateResource.Cache
+E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\alkalmazás2\202MoneiBasicValidation\design teszt\bin\Debug\design teszt.exe.config
+E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\alkalmazás2\202MoneiBasicValidation\design teszt\obj\Debug\design teszt.exe
+E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\alkalmazás2\202MoneiBasicValidation\design teszt\obj\Debug\design teszt.pdb

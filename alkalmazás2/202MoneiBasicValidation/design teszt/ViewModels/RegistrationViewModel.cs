@@ -1,4 +1,5 @@
 ﻿using design_teszt.Commands;
+using design_teszt.Model;
 using System.ComponentModel;
 using System.Windows.Input;
 
@@ -83,7 +84,8 @@ namespace design_teszt.ViewModels
 
         private void SubmitExecute(object obj)
         {
-             // Gombnyomásra ezt csinálja
+            // Gombnyomásra ezt csinálja
+            DataBaseCommand.insertNewUser(int userId, string username, string forename, string lastname, string password, int securityQuestion, string securityAnswer);
         }
 
     }
