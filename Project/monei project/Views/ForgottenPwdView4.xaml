@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:monei_project.Views"
+             xmlns:vm="clr-namespace:monei_project.ViewModels"
+             xmlns:rule="clr-namespace:monei_project.Rules"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280" Name="alUO">
     <UserControl.Resources>
+        <vm:ForgottenPwdViewModel  x:Key="ForgottenPwdViewModel"/>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -40,7 +42,7 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <Grid>
+    <Grid DataContext="{Binding Source={StaticResource ForgottenPwdViewModel}}">
         <Grid.Background>
             <ImageBrush ImageSource="/monei project;component/Pictures/háttér.png"/>
         </Grid.Background>

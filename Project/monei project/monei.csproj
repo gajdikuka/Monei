@@ -84,6 +84,7 @@
     <Compile Include="Rules\CantBeNullRule.cs" />
     <Compile Include="Rules\PasswordValidationRule.cs" />
     <Compile Include="Rules\UserNameMinimumCharacterRule.cs" />
+    <Compile Include="ViewModels\ForgottenPwdViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\RegistrationViewModel.cs" />
     <Compile Include="Views\ForgottenPwdView1.xaml.cs">

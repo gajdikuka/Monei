@@ -9,7 +9,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280" Name="alUO">
     <UserControl.Resources>
-        <vm:RegistrationViewModel  x:Key="LoginViewModel"/>
+        <vm:LoginViewModel  x:Key="LoginViewModel"/>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>

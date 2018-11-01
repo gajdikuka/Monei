@@ -41,6 +41,13 @@ namespace monei_project.ViewModels
             set { _password = value; }
         }
 
+        private string _passwordConformation;
+        public string PasswordConformation
+        {
+            get { return _passwordConformation; }
+            set { _passwordConformation = value; }
+        }
+
         private string _securityQuestion;
 
         public string SecurityQuestion

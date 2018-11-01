@@ -10,7 +10,7 @@
              d:DesignHeight="720" d:DesignWidth="1280">
     
     <UserControl.Resources>
-        <vm:RegistrationViewModel  x:Key="UserViewModel"/>
+        <vm:RegistrationViewModel  x:Key="RegistrationViewModel"/>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -44,7 +44,7 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <Grid DataContext="{Binding Source={StaticResource UserViewModel}}">
+    <Grid DataContext="{Binding Source={StaticResource RegistrationViewModel}}">
         <Grid.Background>
             <ImageBrush ImageSource="/monei project;component/Pictures/háttér.png"/>
         </Grid.Background>
@@ -101,9 +101,9 @@
             </TextBox.Text>
         </TextBox>
         <Label x:Name="lblPassword" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF8D8D8D" FontFamily="Open Sans SemiBold" FontSize="11" Margin="-4,-5,0,0">jelszó</Label>
-        <TextBox x:Name="pwdPasswordRepeat" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="3" BorderThickness="0,0,0,1" VerticalAlignment="Bottom" BorderBrush="#FF5DC2D5" Foreground="Black" SelectionBrush="#FF5DC2D5" FontFamily="Open Sans SemiBold" FontSize="10">
+        <TextBox x:Name="pwdPasswordConformation" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="3" BorderThickness="0,0,0,1" VerticalAlignment="Bottom" BorderBrush="#FF5DC2D5" Foreground="Black" SelectionBrush="#FF5DC2D5" FontFamily="Open Sans SemiBold" FontSize="10">
             <TextBox.Text>
-                <Binding Path="Password" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
+                <Binding Path="PasswordConformation" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <rule:CantBeNullRule/>
                     </Binding.ValidationRules>
