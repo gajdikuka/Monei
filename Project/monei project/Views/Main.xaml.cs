@@ -24,5 +24,30 @@ namespace monei_project.Views
         {
             InitializeComponent();
         }
+
+        private void tb_Sajat_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void lblFelhasznaloNev_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void tb_Megosztott_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
