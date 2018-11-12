@@ -102,7 +102,9 @@ namespace monei_project.ViewModels
                 AnswerToSecurityQuestion = this.AnswerToSecurityQuestion,
             };
 
-            //DataBaseCommand.insertNewUser(int userId, string username, string forename, string lastname, string password, int securityQuestion, string securityAnswer);
+            DataBaseCommand dataBaseCommand = new DataBaseCommand();
+            dataBaseCommand.inserNewUser(user);
+            
         }
 
         byte[] getMd5Hash(string input)
