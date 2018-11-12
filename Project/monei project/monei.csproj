@@ -75,6 +75,24 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Views\MainUserSettings.xaml.cs">
+      <DependentUpon>MainUserSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainFelsoView.xaml.cs">
+      <DependentUpon>MainFelsoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainKozepsoView.xaml.cs">
+      <DependentUpon>MainKozepsoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainBalSavView.xaml.cs">
+      <DependentUpon>MainBalSavView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainDatagridView.xaml.cs">
+      <DependentUpon>MainDatagridView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainJobbSavView.xaml.cs">
+      <DependentUpon>MainJobbSavView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\DataBaseCommand.cs" />
     <Compile Include="Models\DataBaseConnection.cs" />
@@ -99,8 +117,8 @@
     <Compile Include="Views\ForgottenPwdView4.xaml.cs">
       <DependentUpon>ForgottenPwdView4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Main.xaml.cs">
-      <DependentUpon>Main.xaml</DependentUpon>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -111,6 +129,30 @@
     <Compile Include="Views\RegistrationView2.xaml.cs">
       <DependentUpon>RegistrationView2.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\MainUserSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainFelsoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainKozepsoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainBalSavView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainDatagridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainJobbSavView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,7 +181,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Main.xaml">
+    <Page Include="Views\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,6 +251,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\statisztika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\jogok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\shared.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

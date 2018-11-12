@@ -24,7 +24,7 @@ namespace monei_project
         public LoginView loginview = new LoginView();
         public RegistrationView registrationview = new RegistrationView();
         public RegistrationView2 registrationview2 = new RegistrationView2();
-        public fokepernyo fokepernyo = new fokepernyo();
+        public MainView fokepernyo = new MainView();
         public Elfelejtett1View elfelejtett1 = new Elfelejtett1View();
         public Elfelejtett2View elfelejtett2 = new Elfelejtett2View();
         public Elfelejtett3View elfelejtett3 = new Elfelejtett3View();

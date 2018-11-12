@@ -30,8 +30,6 @@ namespace monei_project.Views
 
         private void register(object sender, RoutedEventArgs e)
         {
-
-
             if (Regisztracio != null)
             {
                 Regisztracio(this, e);

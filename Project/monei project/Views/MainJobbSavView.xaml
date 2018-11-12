@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="monei_project.MainJobbSavView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:monei_project"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="360" FontFamily="Open Sans">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Rectangle Name="rect_statisztika" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Fill="#287497" MouseDown="rect_statisztika_MouseDown"></Rectangle>
+        <Image  Grid.Column="1" Grid.Row="0" Source="/monei project;component/pictures/statisztika.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Rectangle Name="rect_jogok" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Fill="#52abbb" MouseDown="rect_jogok_MouseDown"></Rectangle>
+        <Image  Grid.Column="4" Grid.Row="0" Source="/monei project;component/pictures/jogok.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Grid Background="#287497" Name="menupontok" Grid.Row="1" Grid.RowSpan="10" Grid.ColumnSpan="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="6" VerticalAlignment="Bottom" Foreground="White" HorizontalAlignment="Center">Összes pénz:</Label>
+            <Label Grid.Row="1" Grid.ColumnSpan="6" VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Center" FontSize="20">$600.00</Label>
+            <Label Grid.Row="2" Grid.ColumnSpan="6" VerticalAlignment="Bottom" Foreground="White" HorizontalAlignment="Center">Összes pénz:</Label>
+            <Label Grid.Row="3" Grid.ColumnSpan="6" VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Center" FontSize="20">$600.00</Label>
+        </Grid>
+        
+    </Grid>
+</UserControl>

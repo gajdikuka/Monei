@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Documents\GitHub\Monei\Project\monei project\obj\Debug\
+C:\Users\Gajdi\Desktop\Project\monei project\obj\Debug\
 monei_project
 none
 false
 DEBUG;TRACE
-C:\Users\user\Documents\GitHub\Monei\Project\monei project\App.xaml
-91335670903
+C:\Users\Gajdi\Desktop\Project\monei project\App.xaml
+15-868349582
 
-26-852232615
-14-1717832643
-MainWindow.xaml;Views\ForgottenPwdView1.xaml;Views\ForgottenPwdView2.xaml;Views\ForgottenPwdView3.xaml;Views\ForgottenPwdView4.xaml;Views\Main.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\RegistrationView2.xaml;
+32399745584
+14292399984
+Views\MainUserSettings.xaml;Views\MainFelsoView.xaml;Views\MainKozepsoView.xaml;Views\MainBalSavView.xaml;Views\MainDatagridView.xaml;Views\MainJobbSavView.xaml;MainWindow.xaml;Views\ForgottenPwdView1.xaml;Views\ForgottenPwdView2.xaml;Views\ForgottenPwdView3.xaml;Views\ForgottenPwdView4.xaml;Views\MainView.xaml;Views\LoginView.xaml;Views\RegistrationView.xaml;Views\RegistrationView2.xaml;
 
-False
+True
 
