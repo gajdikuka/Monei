@@ -15,7 +15,7 @@ namespace monei_project.Rules
             string charString = value as string;
             if (charString.Length == 0)
             {
-                return new ValidationResult(false, $"A mező nem lehet üres");
+                return new ValidationResult(false, "A mező nem lehet üres");
             }
             return new ValidationResult(true, null);
         }

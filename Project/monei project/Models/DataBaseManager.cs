@@ -21,5 +21,27 @@ namespace monei_project.Models
             return oracleCommand.ExecuteReader();
         }
 
+        public void sendStoredProcedureCall(OracleCommand oracleCommand)
+        {
+            oracleCommand.CommandType = CommandType.StoredProcedure;
+            OracleConnection connection = getConnection();
+            try
+            {
+
+                connection.Open();
+                oracleCommand.ExecuteNonQuery();
+
+            }
+
+            catch (Exception ex)
+            {
+
+                System.Console.WriteLine("Exception: {0}", ex.ToString());
+
+            }
+            connection.Close();
+            
+        }
+
     }
 }

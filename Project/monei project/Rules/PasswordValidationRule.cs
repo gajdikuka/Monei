@@ -15,7 +15,7 @@ namespace monei_project.Rules
             {
                 return new ValidationResult(true, null);
             }
-            return new ValidationResult(false, $"A jelszó nem lehet üres és {PasswordMinimumCharacter} hosszúnak kell lennie!, tartalmaznia kell számot és kis/nagy betűt");
+            return new ValidationResult(false, "A jelszó nem lehet üres és {PasswordMinimumCharacter} hosszúnak kell lennie!, tartalmaznia kell számot és kis/nagy betűt");
         }
 
         private bool PasswordIsValid(string charString)

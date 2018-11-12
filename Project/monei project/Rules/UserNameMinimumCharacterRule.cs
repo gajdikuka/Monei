@@ -12,7 +12,7 @@ namespace monei_project.Rules
             string charString = value as string;
             if(charString.Length < UserNameMinimumCharacter || charString.Length == 0)
             {
-                return new ValidationResult(false, $"A felhasználó név nem lehet üres és minimum {UserNameMinimumCharacter} hosszúnak kell lennie!");
+                return new ValidationResult(false, "A felhasználó név nem lehet üres és minimum {UserNameMinimumCharacter} hosszúnak kell lennie!");
             }
             return new ValidationResult(true, null);
         }
