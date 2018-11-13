@@ -44,11 +44,11 @@ namespace monei_project.Views
             if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError && 
                 !txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
-                LoginView.HasValidationError = true;
+                HasValidationError = true;
                 if (Bejelentkezes != null)
                 {
                     Bejelentkezes(this, e);
-                    LoginView.HasValidationError = false;
+                    HasValidationError = false;
                 }
             }
 

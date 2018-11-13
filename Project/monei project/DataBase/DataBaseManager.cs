@@ -13,7 +13,6 @@ namespace monei_project.Models
         public OracleDataReader sendTextCommand(string command)
         {
             OracleConnection connection = getConnection();
-            connection.Open();
             OracleCommand oracleCommand = new OracleCommand();
             oracleCommand.CommandType = CommandType.Text;
             oracleCommand.CommandText = command;
@@ -27,21 +26,14 @@ namespace monei_project.Models
             OracleConnection connection = getConnection();
             try
             {
-
-                connection.Open();
                 oracleCommand.ExecuteNonQuery();
-
             }
-
             catch (Exception ex)
             {
-
                 System.Console.WriteLine("Exception: {0}", ex.ToString());
-
             }
-            connection.Close();
-            
-        }
 
+            connection.Close(); 
+        }
     }
 }

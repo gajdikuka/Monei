@@ -53,11 +53,11 @@ namespace monei_project.Views
             !txtSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
             !txtAnswerToSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
-                LoginView.HasValidationError = true;
+                HasValidationError = true;
                 if (Regisztracio != null)
                 {
                     Regisztracio(this, e);
-                    LoginView.HasValidationError = false;
+                    HasValidationError = false;
                 }
             }
         }
