@@ -25,16 +25,33 @@ namespace monei_project.Views
             InitializeComponent();
         }
 
+        public static bool _hasValidationError = true;
+        public static bool HasValidationError
+        {
+            get { return _hasValidationError; }
+            set { _hasValidationError = value; }
+        }
+
         public static event EventHandler Bejelentkezes;
         public static event EventHandler Regisztracio;
         public static event EventHandler Elfelejtett;
 
         public void login(object sender, RoutedEventArgs e)
         {
-            if (Bejelentkezes != null)
+            txtUsername.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            pwdPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+
+            if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError && 
+                !txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
-                Bejelentkezes(this, e);
+                LoginView.HasValidationError = true;
+                if (Bejelentkezes != null)
+                {
+                    Bejelentkezes(this, e);
+                    LoginView.HasValidationError = false;
+                }
             }
+
         }
 
         private void register(object sender, RoutedEventArgs e)

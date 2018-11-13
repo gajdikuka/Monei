@@ -94,9 +94,9 @@
       <DependentUpon>MainJobbSavView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
-    <Compile Include="Models\DataBaseCommand.cs" />
-    <Compile Include="Models\DataBaseConnection.cs" />
-    <Compile Include="Models\DataBaseManager.cs" />
+    <Compile Include="DataBase\DataBaseCommand.cs" />
+    <Compile Include="DataBase\DataBaseConnection.cs" />
+    <Compile Include="DataBase\DataBaseManager.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Rules\CantBeNullRule.cs" />

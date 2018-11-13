@@ -1,4 +1,5 @@
 ﻿using monei_project.Commands;
+using monei_project.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -64,12 +65,20 @@ namespace monei_project.ViewModels
 
         private bool CanSubmitExecute(object arg)
         {
-            return true; //Meg lehet-e nyomni a gombot
+            return true; 
         }
 
         private void SubmitExecute(object obj)
         {
+            if(!GetHasValidationError())
+            {
+                //Ide jöhet, ami gombnyomásra történik
+            }
+        }
 
+        private bool GetHasValidationError()
+        {
+            return ForgottenPwdView3.HasValidationError;
         }
     }
 }

@@ -18,15 +18,30 @@ namespace monei_project.Views
     /// <summary>
     /// Interaction logic for Elfelejtett1View.xaml
     /// </summary>
-    public partial class Elfelejtett1View : UserControl
+    public partial class ForgottenPwdView1 : UserControl
     {
-        public Elfelejtett1View()
+        public ForgottenPwdView1()
         {
             InitializeComponent();
         }
 
         public static event EventHandler Biztonsagi;
         public static event EventHandler Vissza;
+
+        private void biztonsagi(object sender, RoutedEventArgs e)
+        {
+            txtUsername.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+
+            if (!txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError)
+            {
+                LoginView.HasValidationError = true;
+                if (Biztonsagi != null)
+                {
+                    Biztonsagi(this, e);
+                    LoginView.HasValidationError = false;
+                }
+            }
+        }
 
         private void back(object sender, RoutedEventArgs e)
         {
@@ -35,13 +50,6 @@ namespace monei_project.Views
                 Vissza(this, e);
             }
         }
-
-        private void biztonsagi(object sender, RoutedEventArgs e)
-        {
-            if (Biztonsagi != null)
-            {
-                Biztonsagi(this, e);
-            }
-        }
+       
     }
 }

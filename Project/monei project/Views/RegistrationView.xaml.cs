@@ -25,14 +25,40 @@ namespace monei_project.Views
             InitializeComponent();
         }
 
+        public static bool _hasValidationError = true;
+        public static bool HasValidationError
+        {
+            get { return _hasValidationError; }
+            set { _hasValidationError = value; }
+        }
+
         public static event EventHandler Regisztracio;
         public static event EventHandler Vissza;
 
         private void register(object sender, RoutedEventArgs e)
         {
-            if (Regisztracio != null)
+            txtUsername.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            pwdPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            txtLastName.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            txtForename.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            txtSecurityQuestion.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            txtAnswerToSecurityQuestion.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+
+            if (!txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !txtLastName.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !txtForename.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !txtSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+            !txtAnswerToSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
-                Regisztracio(this, e);
+                LoginView.HasValidationError = true;
+                if (Regisztracio != null)
+                {
+                    Regisztracio(this, e);
+                    LoginView.HasValidationError = false;
+                }
             }
         }
 

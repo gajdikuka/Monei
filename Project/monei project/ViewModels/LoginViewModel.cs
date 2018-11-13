@@ -1,11 +1,13 @@
 ﻿using monei_project.Commands;
 using monei_project.Models;
+using monei_project.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace monei_project.ViewModels
@@ -51,12 +53,21 @@ namespace monei_project.ViewModels
 
         private bool CanSubmitExecute(object arg)
         {
-            return true; //Meg lehet-e nyomni a gombot
+            return true; 
         }
 
         private void SubmitExecute(object obj)
         {
-    
+            if (!GetHasValidationError())
+            {
+                //Ide jön, amit gombnyomásra csináljon
+            }
         }
+
+        private bool GetHasValidationError()
+        {
+            return LoginView.HasValidationError;
+        }
+
     }
 }

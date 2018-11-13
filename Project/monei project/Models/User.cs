@@ -32,9 +32,9 @@ namespace monei_project.Models
             set { _lastName = value; }//OnPropertyChanged(LastName); }
         }
 
-        private byte[] _password;
+        private string _password;
 
-        public byte[] Password
+        public string Password
         {
             get { return _password; }
             set { _password = value; } //OnPropertyChanged(Password); }
@@ -60,7 +60,7 @@ namespace monei_project.Models
         {
 
         }
-        public User(string username, string forename, string lastName, byte[] password, string securityQuestion, string answerToSecurityQuestion)
+        public User(string username, string forename, string lastName, string password, string securityQuestion, string answerToSecurityQuestion)
         {
             this.Username = username;
             this.Forename = forename;

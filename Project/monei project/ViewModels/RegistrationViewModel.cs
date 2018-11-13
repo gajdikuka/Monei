@@ -1,5 +1,7 @@
 ﻿using monei_project.Commands;
 using monei_project.Models;
+using monei_project.Views;
+using System;
 using System.ComponentModel;
 using System.Security.Cryptography;
 using System.Text;
@@ -87,33 +89,44 @@ namespace monei_project.ViewModels
 
         private bool CanSubmitExecute(object arg)
         {
-            return true; //Meg lehet-e nyomni a gombot
+            return true; 
         }
 
         private void SubmitExecute(object obj)
         {
-            var user = new User()
+            if(!GetHasValidationError())
             {
-                Username = this.Username,
-                Forename = this.Forename,
-                LastName = this.LastName,
-                Password = this.getMd5Hash(this.Password),
-                SecurityQuestion = this.SecurityQuestion,
-                AnswerToSecurityQuestion = this.AnswerToSecurityQuestion,
-            };
+                var user = new User()
+                {
+                    Username = this.Username,
+                    Forename = this.Forename,
+                    LastName = this.LastName,
+                    Password = this.getHashSha256(this.Password),
+                    SecurityQuestion = this.SecurityQuestion,
+                    AnswerToSecurityQuestion = this.AnswerToSecurityQuestion,
+                };
 
-            DataBaseCommand dataBaseCommand = new DataBaseCommand();
-            dataBaseCommand.inserNewUser(user);
-            
+                DataBaseCommand dataBaseCommand = new DataBaseCommand();
+                dataBaseCommand.inserNewUser(user);
+            }
         }
 
-        byte[] getMd5Hash(string input)
+        private bool GetHasValidationError()
         {
-            MD5CryptoServiceProvider md5Hasher = new MD5CryptoServiceProvider();
+            return RegistrationView.HasValidationError;
+        }
 
-            byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
-
-            return data;
+        public string getHashSha256(string text)
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(text);
+            SHA256Managed hashstring = new SHA256Managed();
+            byte[] hash = hashstring.ComputeHash(bytes);
+            string hashString = string.Empty;
+            foreach (byte x in hash)
+            {
+                hashString += String.Format("{0:x2}", x);
+            }
+            return hashString;
         }
 
     }

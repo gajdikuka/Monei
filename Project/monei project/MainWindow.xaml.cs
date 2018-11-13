@@ -25,10 +25,10 @@ namespace monei_project
         public RegistrationView registrationview = new RegistrationView();
         public RegistrationView2 registrationview2 = new RegistrationView2();
         public MainView fokepernyo = new MainView();
-        public Elfelejtett1View elfelejtett1 = new Elfelejtett1View();
-        public Elfelejtett2View elfelejtett2 = new Elfelejtett2View();
-        public Elfelejtett3View elfelejtett3 = new Elfelejtett3View();
-        public Elfelejtett4View elfelejtett4 = new Elfelejtett4View();
+        public ForgottenPwdView1 elfelejtett1 = new ForgottenPwdView1();
+        public ForgottenPwdView2 elfelejtett2 = new ForgottenPwdView2();
+        public ForgottenPwdView3 elfelejtett3 = new ForgottenPwdView3();
+        public ForgottenPwdView4 elfelejtett4 = new ForgottenPwdView4();
 
         public MainWindow()
         {
@@ -44,16 +44,16 @@ namespace monei_project
 
             RegistrationView2.Vissza += new EventHandler(Vissza);
 
-            Elfelejtett1View.Vissza += new EventHandler(Vissza);
-            Elfelejtett1View.Biztonsagi += new EventHandler(Elfelejtett1View_Biztonsagi);
+            ForgottenPwdView1.Vissza += new EventHandler(Vissza);
+            ForgottenPwdView1.Biztonsagi += new EventHandler(ForgottenPwdView1_Biztonsagi);
 
-            Elfelejtett2View.Kuldes += new EventHandler(Elfelejtett2View_Kuldes);
-            Elfelejtett2View.Vissza += new EventHandler(Vissza);
+            ForgottenPwdView2.Kuldes += new EventHandler(ForgottenPwdView2_Kuldes);
+            ForgottenPwdView2.Vissza += new EventHandler(Vissza);
 
-            Elfelejtett3View.Beallitas += new EventHandler(Elfelejtett3View_Beallitas);
-            Elfelejtett3View.Vissza += new EventHandler(Vissza);
+            ForgottenPwdView3.Beallitas += new EventHandler(ForgottenPwdView3_Beallitas);
+            ForgottenPwdView3.Vissza += new EventHandler(Vissza);
 
-            Elfelejtett4View.Vissza += new EventHandler(Vissza);
+            ForgottenPwdView4.Vissza += new EventHandler(Vissza);
         }   
 
         void LoginView_Bejelentkezes(object sender, EventArgs e)
@@ -86,19 +86,19 @@ namespace monei_project
             maingrid.Children.Add(loginview);
         }
 
-        void Elfelejtett1View_Biztonsagi(object sender, EventArgs e)
+        void ForgottenPwdView1_Biztonsagi(object sender, EventArgs e)
         {
             maingrid.Children.Clear();
             maingrid.Children.Add(elfelejtett2);
         }
 
-        void Elfelejtett2View_Kuldes(object sender, EventArgs e)
+        void ForgottenPwdView2_Kuldes(object sender, EventArgs e)
         {
             maingrid.Children.Clear();
             maingrid.Children.Add(elfelejtett3);
         }
 
-        void Elfelejtett3View_Beallitas(object sender, EventArgs e)
+        void ForgottenPwdView3_Beallitas(object sender, EventArgs e)
         {
             maingrid.Children.Clear();
             maingrid.Children.Add(elfelejtett4);

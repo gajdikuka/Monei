@@ -151,7 +151,7 @@
             </TextBox.Text>
         </TextBox>
         <Label x:Name="lblAnswerToSecutiryQuestion" Grid.Column="8" Grid.Row="8" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF8D8D8D" FontFamily="Open Sans SemiBold" FontSize="11" Margin="-4,-5,0,0">válasz</Label>
-        <Button x:Name="btnRegistration" Grid.Column="5" Grid.Row="10" Grid.ColumnSpan="4" Background="#FF5DC2D5" Foreground="White" BorderBrush="{x:Null}" FontFamily="Open Sans SemiBold" FontSize="14" Click="register" Style="{DynamicResource kekbutton}" Cursor="Hand" Command="{Binding SubmitCommand}">Regisztráció</Button>
+        <Button x:Name="btnRegistration" Grid.Column="5" Grid.Row="10" Grid.ColumnSpan="4" Background="#FF5DC2D5" Foreground="White" BorderBrush="{x:Null}" FontFamily="Open Sans SemiBold" FontSize="14" Click="register" Style="{DynamicResource kekbutton}" Cursor="Hand" Command="{Binding DoRegistration}">Regisztráció</Button>
         <Button x:Name="btnBack" Grid.Column="6" Grid.Row="11" Grid.ColumnSpan="2" Background="{x:Null}" Foreground="#FF5DC2D5" BorderBrush="{x:Null}" FontFamily="Open Sans SemiBold" FontSize="10" HorizontalAlignment="Center" Click="back" Style="{DynamicResource kekbutton}" Cursor="Hand">Vissza</Button>
     </Grid>
 </UserControl>

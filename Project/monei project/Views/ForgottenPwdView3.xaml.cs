@@ -18,16 +18,40 @@ namespace monei_project.Views
     /// <summary>
     /// Interaction logic for Elfelejtett3View.xaml
     /// </summary>
-    public partial class Elfelejtett3View : UserControl
+    public partial class ForgottenPwdView3 : UserControl
     {
-        public Elfelejtett3View()
+        public ForgottenPwdView3()
         {
             InitializeComponent();
+        }
+
+        public static bool _hasValidationError = true;
+        public static bool HasValidationError
+        {
+            get { return _hasValidationError; }
+            set { _hasValidationError = value; }
         }
 
         public static event EventHandler Beallitas;
         public static event EventHandler Vissza;
 
+        private void beallitas(object sender, RoutedEventArgs e)
+        {
+            pwdPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+
+
+            if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
+                !pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).HasValidationError)
+            {
+                LoginView.HasValidationError = true;
+                if (Beallitas != null)
+                {
+                    Beallitas(this, e);
+                    LoginView.HasValidationError = false;
+                }
+            }
+        }
         private void back(object sender, RoutedEventArgs e)
         {
             if (Vissza != null)
@@ -36,12 +60,5 @@ namespace monei_project.Views
             }
         }
 
-        private void beallitas(object sender, RoutedEventArgs e)
-        {
-            if (Beallitas != null)
-            {
-                Beallitas(this, e);
-            }
-        }
     }
 }

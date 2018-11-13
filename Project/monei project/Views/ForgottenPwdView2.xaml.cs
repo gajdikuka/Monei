@@ -18,9 +18,9 @@ namespace monei_project.Views
     /// <summary>
     /// Interaction logic for Elfelejtett2View.xaml
     /// </summary>
-    public partial class Elfelejtett2View : UserControl
+    public partial class ForgottenPwdView2 : UserControl
     {
-        public Elfelejtett2View()
+        public ForgottenPwdView2()
         {
             InitializeComponent();
         }

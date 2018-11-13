@@ -11,11 +11,16 @@ namespace monei_project.Rules
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             string charString = value as string;
-            if (PasswordIsValid(charString))
+            if (charString != null)
             {
-                return new ValidationResult(true, null);
+                if (PasswordIsValid(charString))
+                {
+                    return new ValidationResult(true, null);
+                }
+                return new ValidationResult(false, "A jelszó nem lehet üres és {PasswordMinimumCharacter} hosszúnak kell lennie!, tartalmaznia kell számot és kis/nagy betűt!");
             }
-            return new ValidationResult(false, "A jelszó nem lehet üres és {PasswordMinimumCharacter} hosszúnak kell lennie!, tartalmaznia kell számot és kis/nagy betűt");
+            else
+                return new ValidationResult(false, "NullObject");
         }
 
         private bool PasswordIsValid(string charString)

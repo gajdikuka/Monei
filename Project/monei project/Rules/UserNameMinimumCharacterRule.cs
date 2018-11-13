@@ -10,11 +10,16 @@ namespace monei_project.Rules
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             string charString = value as string;
-            if(charString.Length < UserNameMinimumCharacter || charString.Length == 0)
+            if(charString != null)
             {
-                return new ValidationResult(false, "A felhasználó név nem lehet üres és minimum {UserNameMinimumCharacter} hosszúnak kell lennie!");
+                if (charString.Length < UserNameMinimumCharacter || charString.Length == 0)
+                {
+                    return new ValidationResult(false, "A felhasználó név nem lehet üres és minimum {UserNameMinimumCharacter} hosszúnak kell lennie!");
+                }
+                return new ValidationResult(true, null);
             }
-            return new ValidationResult(true, null);
+            else
+                return new ValidationResult(false, "NullObject");
         }
     }
 }
