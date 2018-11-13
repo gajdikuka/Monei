@@ -75,6 +75,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="DataBase\BaseDataBaseConnection.cs" />
+    <Compile Include="DataBase\UserManager.cs" />
     <Compile Include="Views\MainUserSettings.xaml.cs">
       <DependentUpon>MainUserSettings.xaml</DependentUpon>
     </Compile>
@@ -94,9 +96,6 @@
       <DependentUpon>MainJobbSavView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
-    <Compile Include="DataBase\DataBaseCommand.cs" />
-    <Compile Include="DataBase\DataBaseConnection.cs" />
-    <Compile Include="DataBase\DataBaseManager.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Rules\CantBeNullRule.cs" />

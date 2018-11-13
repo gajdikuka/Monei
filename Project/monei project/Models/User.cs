@@ -40,9 +40,9 @@ namespace monei_project.Models
             set { _password = value; } //OnPropertyChanged(Password); }
         }
 
-        private string _securityQuestion;
+        private int _securityQuestion;
 
-        public string SecurityQuestion
+        public int SecurityQuestion
         {
             get { return _securityQuestion; }
             set { _securityQuestion = value; }//OnPropertyChanged(SecurityQuestion); }
@@ -60,7 +60,7 @@ namespace monei_project.Models
         {
 
         }
-        public User(string username, string forename, string lastName, string password, string securityQuestion, string answerToSecurityQuestion)
+        public User(string username, string forename, string lastName, string password, int securityQuestion, string answerToSecurityQuestion)
         {
             this.Username = username;
             this.Forename = forename;

@@ -1,4 +1,5 @@
 ﻿using monei_project.Commands;
+using monei_project.DataBase;
 using monei_project.Models;
 using monei_project.Views;
 using System;
@@ -51,9 +52,9 @@ namespace monei_project.ViewModels
             set { _passwordConformation = value; }
         }
 
-        private string _securityQuestion;
+        private int _securityQuestion;
 
-        public string SecurityQuestion
+        public int SecurityQuestion
         {
             get { return _securityQuestion; }
             set { _securityQuestion = value; }
@@ -106,9 +107,8 @@ namespace monei_project.ViewModels
                     SecurityQuestion = this.SecurityQuestion,
                     AnswerToSecurityQuestion = this.AnswerToSecurityQuestion,
                 };
-
-                DataBaseCommand dataBaseCommand = new DataBaseCommand();
-                dataBaseCommand.inserNewUser(user);
+                UserManager userManager = new UserManager();
+                userManager.inserNewUser(user);
             }
         }
 
