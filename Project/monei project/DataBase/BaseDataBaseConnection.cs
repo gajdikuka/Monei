@@ -12,7 +12,10 @@ namespace monei_project.DataBase
         protected BaseDataBaseConnection() { }
         private string connectionString
         {
+            //adatbázis szerver
             get { return "Data Source=donfamilia.tk;User Id=W1O67X;Password=killmepls;"; }
+            //eke adatbázis
+            //get { return "Data Source=193.225.33.71;User Id=W1O67X;Password=szelektcsillag;"; }
         }
         protected OracleConnection getConnection()
         {

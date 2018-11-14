@@ -75,7 +75,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="DataBase\AccountManager.cs" />
     <Compile Include="DataBase\BaseDataBaseConnection.cs" />
+    <Compile Include="DataBase\LogManager.cs" />
+    <Compile Include="DataBase\TransactionManager.cs" />
     <Compile Include="DataBase\UserManager.cs" />
     <Compile Include="Views\MainUserSettings.xaml.cs">
       <DependentUpon>MainUserSettings.xaml</DependentUpon>

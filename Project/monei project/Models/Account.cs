@@ -8,19 +8,12 @@ namespace monei_project.Models
 {
     class Account
     {
-        private int accountId, userId;
-        private string accountName, currency;
+        private string accountName, currency, username;
         private double ammount = 0;
-
-        public int AccountId
+        public string Username
         {
-            get { return accountId; }
-            set { accountId = value; }
-        }
-        public int UserId
-        {
-            get { return userId; }
-            set { userId = value; }
+            get { return username; }
+            set { username = value; }
         }
         public string AccountName
         {
@@ -38,20 +31,17 @@ namespace monei_project.Models
             set { ammount = value; }
         }
 
-        public Account(int accountId, int userId, string accountName, string currency, double ammount)
+        public Account(string username, string accountName, string currency, double ammount)
         {
-            this.accountId = accountId;
-            this.userId = userId;
-            this.accountName = accountName;
-            this.currency = currency;
-            this.ammount = ammount;
+            Username = username;
+            AccountName = accountName;
+            Currency = currency;
+            Ammount = ammount;
         }
-        public Account(int accountId, int userId, string accountName, string currency)
+        public Account(string username, string accountName, string currency)
         {
-            this.accountId = accountId;
-            this.userId = userId;
-            this.accountName = accountName;
-            this.currency = currency;
-        }
+            Username = username;
+            AccountName = accountName; 
+            Currency = currency;        }
     }
 }
