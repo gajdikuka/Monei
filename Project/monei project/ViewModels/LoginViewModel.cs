@@ -14,22 +14,23 @@ namespace monei_project.ViewModels
 {   
     class LoginViewModel : ViewModelBase
     {
-        private string _username;
+        private static string _username;
 
-        public string Username
+        public static string Username
         {
             get { return _username; }
             set { _username = value; }
         }
 
-        private string _password;
+        private static string _password;
 
-        public string Password
+        public static string Password
         {
             get { return _password; }
             set { _password = value; }
         }
 
+        //Ez a dologin kell?
         private ICommand _doLogin;
         public ICommand DoLogin
         {
@@ -61,5 +62,13 @@ namespace monei_project.ViewModels
             return LoginView.HasValidationError;
         }
 
+        public static bool LoginChecking()
+        {
+            //if (getUsername(Username) && Password == getPassword(Username))
+            if (Username == "asd" && Password == "asd")
+                return true;
+            else
+                return false;
+        }
     }
 }

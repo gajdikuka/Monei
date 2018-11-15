@@ -41,17 +41,16 @@ namespace monei_project.Views
             txtUsername.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             pwdPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
 
-            if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError && 
-                !txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError)
+            if (Bejelentkezes != null && ViewModels.LoginViewModel.LoginChecking())
+            {
+                HasValidationError = false; // Tuti kell ez a piros keret?
+                Bejelentkezes(this, e);
+            }
+            else
             {
                 HasValidationError = true;
-                if (Bejelentkezes != null)
-                {
-                    Bejelentkezes(this, e);
-                    HasValidationError = false;
-                }
+                MessageBox.Show("Hibás felhasználónév vagy jelszó");
             }
-
         }
 
         private void register(object sender, RoutedEventArgs e)
