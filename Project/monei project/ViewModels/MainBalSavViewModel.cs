@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace monei_project.ViewModels
 {
-    class MainBalSavViewModel : INotifyPropertyChanged
+    class MainBalSavViewModel : ViewModelBase
     {
         private List<string> labelList;
         public List<string> LabelList
@@ -23,13 +23,6 @@ namespace monei_project.ViewModels
             set { _username = value; }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 
 }

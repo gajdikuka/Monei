@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace monei_project.ViewModels
 {
-    class MainJobbSavViewModel
+    class MainJobbSavViewModel : ViewModelBase
     {
     }
 }
