@@ -4,9 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:monei_project"
+             xmlns:vm="clr-namespace:monei_project.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="360" FontFamily="Open Sans">
-    <Grid>
+    <UserControl.Resources>
+        <vm:MainBalSavViewModel  x:Key="MainBalSavViewModel"/>
+    </UserControl.Resources>
+    <Grid DataContext="{Binding Source={StaticResource MainBalSavViewModel}}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
@@ -73,10 +77,22 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-            <Label Grid.Row="1" Grid.ColumnSpan="6" Foreground="White" HorizontalAlignment="Center" FontSize="20">Erste főszámla</Label>
-            <Label Grid.Row="3" Grid.ColumnSpan="6" Foreground="White" HorizontalAlignment="Center" FontSize="20">Erste mellékszámla</Label>
+            <Label Grid.Row="1" Grid.ColumnSpan="6" Foreground="White" HorizontalAlignment="Center" FontSize="20">Erste főszámla
+                <!--<Label.Content>
+                    <Binding Path="labelList[1]"/>
+                </Label.Content>-->
+            </Label>
+            <Label Grid.Row="3" Grid.ColumnSpan="6" Foreground="White" HorizontalAlignment="Center" FontSize="20">Erste mellékszámla
+                <!--<Label.Content>
+                    <Binding Path="labelList[2]"/>
+                </Label.Content>-->
+            </Label>
         </Grid>
 
-        <Label Name="lblFelhasznaloNev" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3" VerticalAlignment="Bottom" MouseDown="lblFelhasznaloNev_MouseDown" Foreground="White" Cursor="Hand">Felhasználónév</Label>
+        <Label Name="lblFelhasznaloNev" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3" VerticalAlignment="Bottom" MouseDown="lblFelhasznaloNev_MouseDown" Foreground="White" Cursor="Hand">Felhasználónév
+            <!--<Label.Content>
+                <Binding Path="Username" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay"/>
+            </Label.Content>-->
+        </Label>
     </Grid>
 </UserControl>

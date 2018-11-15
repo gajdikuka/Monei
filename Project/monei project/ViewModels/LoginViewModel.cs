@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Input;
 
 namespace monei_project.ViewModels
-{
+{   
     class LoginViewModel : INotifyPropertyChanged
     {
         private string _username;
@@ -45,22 +45,22 @@ namespace monei_project.ViewModels
             {
                 if (_doLogin == null)
                 {
-                    _doLogin = new RelayCommand(CanSubmitExecute, SubmitExecute);
+                    _doLogin = new RelayCommand(CanDoLogin, DoLoginExecute);
                 }
                 return _doLogin;
             }
         }
 
-        private bool CanSubmitExecute(object arg)
+        private bool CanDoLogin(object arg)
         {
             return true; 
         }
 
-        private void SubmitExecute(object obj)
+        private void DoLoginExecute(object obj)
         {
             if (!GetHasValidationError())
             {
-                //Ide jön, amit gombnyomásra csináljon
+                Globals.LoggedInUser = "Username";
             }
         }
 

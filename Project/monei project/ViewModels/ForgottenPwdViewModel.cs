@@ -57,18 +57,18 @@ namespace monei_project.ViewModels
             {
                 if (_doPasswordChange == null)
                 {
-                    _doPasswordChange = new RelayCommand(CanSubmitExecute, SubmitExecute);
+                    _doPasswordChange = new RelayCommand(CanDoPasswordChange, DoPasswordChangeExecute);
                 }
                 return _doPasswordChange;
             }
         }
 
-        private bool CanSubmitExecute(object arg)
+        private bool CanDoPasswordChange(object arg)
         {
             return true; 
         }
 
-        private void SubmitExecute(object obj)
+        private void DoPasswordChangeExecute(object obj)
         {
             if(!GetHasValidationError())
             {

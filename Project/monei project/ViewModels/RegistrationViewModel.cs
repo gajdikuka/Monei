@@ -83,18 +83,18 @@ namespace monei_project.ViewModels
             {
                 if (_doRegistration == null)
                 {
-                    _doRegistration = new RelayCommand(CanSubmitExecute, SubmitExecute);
+                    _doRegistration = new RelayCommand(CanDoRegistration, DoRegistrationExecute);
                 }
                 return _doRegistration;                
             }
         }
 
-        private bool CanSubmitExecute(object arg)
+        private bool CanDoRegistration(object arg)
         {
             return true; 
         }
 
-        private void SubmitExecute(object obj)
+        private void DoRegistrationExecute(object obj)
         {
             if(!GetHasValidationError())
             {

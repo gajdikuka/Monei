@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:monei_project"
+        xmlns:vm="clr-namespace:monei_project.ViewModels"
         mc:Ignorable="d"
         Title="" Height="450" Width="600" WindowStyle="ToolWindow">
-    <Grid>
+    <Window.Resources>
+        <vm:MainUserSettingsViewModel  x:Key="MainUserSettingsViewModel"/>
+    </Window.Resources>
+    <Grid DataContext="{Binding Source={StaticResource MainUserSettingsViewModel}}">
         
     </Grid>
 </Window>
