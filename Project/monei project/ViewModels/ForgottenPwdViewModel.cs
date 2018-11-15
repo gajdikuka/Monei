@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace monei_project.ViewModels
 {
-    class ForgottenPwdViewModel : INotifyPropertyChanged
+    class ForgottenPwdViewModel : ViewModelBase
     {
         private string _username;
 
@@ -40,14 +40,6 @@ namespace monei_project.ViewModels
         {
             get { return _answerToSecurityQuestion; }
             set { _answerToSecurityQuestion = value; }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private ICommand _doPasswordChange;

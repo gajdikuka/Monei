@@ -87,6 +87,7 @@
     <Compile Include="ViewModels\MainJobbSavViewModel.cs" />
     <Compile Include="ViewModels\MainKozepsoViewModel.cs" />
     <Compile Include="ViewModels\MainUserSettingsViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\MainUserSettings.xaml.cs">
       <DependentUpon>MainUserSettings.xaml</DependentUpon>
     </Compile>

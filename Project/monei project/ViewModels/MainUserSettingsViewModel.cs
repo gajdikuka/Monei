@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace monei_project.ViewModels
 {
-    class MainUserSettingsViewModel
+    class MainUserSettingsViewModel : ViewModelBase
     {
     }
 }

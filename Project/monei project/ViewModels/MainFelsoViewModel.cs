@@ -7,22 +7,14 @@ using System.Threading.Tasks;
 
 namespace monei_project.ViewModels
 {
-    class MainFelsoViewModel : INotifyPropertyChanged
+    class MainFelsoViewModel : ViewModelBase
     {
-        private string _balance;
 
+        private string _balance;
         public string Balance
         {
             get { return _balance; }
-            set { _balance = value; }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            set { SetAndRaisePropertyChanged(ref _balance, "1111$"); }
         }
 
         public void SetBalance()
