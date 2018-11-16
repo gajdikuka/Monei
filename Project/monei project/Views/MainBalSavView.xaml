@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Rectangle Name="rect_megosztott" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Fill="#52abbb" MouseDown="rect_megosztott_MouseDown"></Rectangle>
+        <Button Name="rect_megosztott" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" MouseDown="rect_megosztott_MouseDown" Command="{Binding DoBackGroundColor}"></Button>
         <Image  Grid.Column="4" Grid.Row="0" Source="/monei project;component/pictures/shared.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -56,7 +56,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Grid Background="#287497" Name="menupontok" Grid.Row="1" Grid.RowSpan="12" Grid.ColumnSpan="6">
+        <Grid Background="{Binding Path=BackGroundColor}" Name="menupontok" Grid.Row="1" Grid.RowSpan="12" Grid.ColumnSpan="6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />

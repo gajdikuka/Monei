@@ -384,3 +384,47 @@ C:\Users\tesa3\Downloads\MONEi\205MoneiMainViewModels\Project\monei project\obj\
 C:\Users\tesa3\Downloads\MONEi\205MoneiMainViewModels\Project\monei project\obj\Debug\monei project.g.resources
 C:\Users\tesa3\Downloads\MONEi\205MoneiMainViewModels\Project\monei project\obj\Debug\monei_project.Properties.Resources.resources
 C:\Users\tesa3\Downloads\MONEi\205MoneiMainViewModels\Project\monei project\obj\Debug\monei.csproj.GenerateResource.Cache
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\bin\Debug\monei project.exe.config
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project.exe
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project.pdb
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\bin\Debug\monei project.exe
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\bin\Debug\monei project.pdb
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei.csprojResolveAssemblyReference.cache
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainUserSettings.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainFelsoView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainKozepsoView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainBalSavView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainDatagridView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainJobbSavView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\MainWindow.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView1.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView2.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView3.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView4.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\LoginView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\RegistrationView.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\RegistrationView2.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\App.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project_MarkupCompile.cache
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project_MarkupCompile.lref
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainUserSettings.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainFelsoView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainKozepsoView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainBalSavView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainDatagridView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainJobbSavView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\MainWindow.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView1.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView2.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView3.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView4.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\MainView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\LoginView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\RegistrationView.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\RegistrationView2.baml
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project.g.resources
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei_project.Properties.Resources.resources
+C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei.csproj.GenerateResource.Cache
