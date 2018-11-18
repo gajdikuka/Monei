@@ -55,28 +55,28 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Button Name="rect_sajat" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Background="#287497" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorSajat}"></Button>
-        <Image  Grid.Column="1" Grid.Row="0" Source="/monei project;component/pictures/wallet.png" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Button Name="rect_megosztott" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Background="#52abbb" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorMegosztott}"></Button>
-        <Image  Grid.Column="4" Grid.Row="0" Source="/monei project;component/pictures/shared.png" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
+        <Button Name="rect_sajat" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Background="#287497" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorSajat}">
+            <Button.Content>
+                <Image Source="/monei project;component/pictures/wallet.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button.Content>
+        </Button>
+        <Button Name="rect_megosztott" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Background="#52abbb" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorMegosztott}">
+            <Button.Content>
+                <Image Source="/monei project;component/pictures/shared.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button.Content>
+        </Button>
         <Grid Background="{Binding Path=BackGroundColor}" Name="menupontok" Grid.Row="1" Grid.RowSpan="12" Grid.ColumnSpan="6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
