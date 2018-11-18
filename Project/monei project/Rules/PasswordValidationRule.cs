@@ -8,6 +8,14 @@ namespace monei_project.Rules
     {
         public int PasswordMinimumCharacter { get; set; }
 
+        private string _errorMessage;
+
+        public string ErrorMessage
+        {
+            get { return _errorMessage; }
+            set { _errorMessage = value; }
+        }
+
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             string charString = value as string;
@@ -17,10 +25,10 @@ namespace monei_project.Rules
                 {
                     return new ValidationResult(true, null);
                 }
-                return new ValidationResult(false, "A jelszó nem lehet üres és {PasswordMinimumCharacter} hosszúnak kell lennie!, tartalmaznia kell számot és kis/nagy betűt!");
+                return new ValidationResult(false, this.ErrorMessage);
             }
             else
-                return new ValidationResult(false, "NullObject");
+                return new ValidationResult(false, "Nem lehet üres");
         }
 
         private bool PasswordIsValid(string charString)

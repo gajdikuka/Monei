@@ -54,7 +54,14 @@ namespace monei_project
             ForgottenPwdView3.Vissza += new EventHandler(Vissza);
 
             ForgottenPwdView4.Vissza += new EventHandler(Vissza);
-        }   
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            Application.Current.Shutdown();
+        }
 
         void LoginView_Bejelentkezes(object sender, EventArgs e)
         {

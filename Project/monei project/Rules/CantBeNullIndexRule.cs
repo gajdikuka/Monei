@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace monei_project.Rules
 {
-    public class CantBeNullRule : ValidationRule
+    public class CantBeNullIndexRule : ValidationRule
     {
         private string _errorMessage;
 
@@ -20,17 +20,13 @@ namespace monei_project.Rules
 
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
-            string charString = value as string;
-            if (charString != null)
+            int index = int.Parse(value.ToString());
+            if (index != -1)
             {
-                if (charString.Length == 0)
-                {
-                    return new ValidationResult(false, this.ErrorMessage);
-                }
-                return new ValidationResult(true, null);
+                return new ValidationResult(false, this.ErrorMessage);
             }
             else
-                return new ValidationResult(false, "Nem lehet üres");
+            return new ValidationResult(true, null);
 
         }
     }
