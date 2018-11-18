@@ -34,7 +34,7 @@ namespace monei_project.DataBase
             OracleConnection connection = getConnection();
             OracleCommand oracleCommand = new OracleCommand("Get_Username", connection);
             oracleCommand.CommandType = CommandType.StoredProcedure;
-            oracleCommand.Parameters.Add("p_ReturningUsername", OracleDbType.Varchar2, 50, null, ParameterDirection.Output);
+            oracleCommand.Parameters.Add("p_ReturningUsername", OracleDbType.Varchar2, 50, null, ParameterDirection.ReturnValue);
             oracleCommand.Parameters.Add("p_Username", OracleDbType.Varchar2).Value = username;
             oracleCommand.BindByName = true;
 
@@ -58,7 +58,7 @@ namespace monei_project.DataBase
             OracleConnection connection = getConnection();
             OracleCommand oracleCommand = new OracleCommand("Get_Password", connection);
             oracleCommand.CommandType = CommandType.StoredProcedure;
-            oracleCommand.Parameters.Add("p_Password", OracleDbType.Varchar2, 500, null, ParameterDirection.Output);
+            oracleCommand.Parameters.Add("p_Password", OracleDbType.Varchar2, 500, null, ParameterDirection.ReturnValue);
             oracleCommand.Parameters.Add("p_Username", OracleDbType.Varchar2).Value = username;
             oracleCommand.BindByName = true;
             try
