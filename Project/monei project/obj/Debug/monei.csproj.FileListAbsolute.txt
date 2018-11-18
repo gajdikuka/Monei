@@ -428,3 +428,4 @@ C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\Views\Regis
 C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei project.g.resources
 C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei_project.Properties.Resources.resources
 C:\Users\tesa3\Downloads\MONEi\Monei\Project\monei project\obj\Debug\monei.csproj.GenerateResource.Cache
+C:\Users\Gajdi\Desktop\Project\monei project\obj\Debug\App.baml

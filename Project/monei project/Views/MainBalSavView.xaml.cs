@@ -57,5 +57,10 @@ namespace monei_project
         {
 
         }
+
+        private void rect_sajat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

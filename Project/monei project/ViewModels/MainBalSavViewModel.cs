@@ -11,6 +11,7 @@ namespace monei_project.ViewModels
 {
     class MainBalSavViewModel : ViewModelBase
     {
+        private List<string> sajatszamlak = new List<string>{ "számla 1", "számla 2", "számla 3", "számla 4", "számla 5", };
         private List<string> labelList;
         public List<string> LabelList
         {
@@ -25,26 +26,38 @@ namespace monei_project.ViewModels
             set { _username = value; }
         }
 
-        private string _backGroundColor;
+        private string _backGroundColor = "#287497";
 
         public string BackGroundColor
-            {
-                get { return _backGroundColor; }
-                set { _backGroundColor = value; OnPropertyChanged("BackGroundColor"); }
-            }
+        {
+            get { return _backGroundColor; }
+            set { _backGroundColor = value; OnPropertyChanged("BackGroundColor"); }
+        }
 
+        ICommand _doBackGroundColor1;
+        ICommand _doBackGroundColor2;
 
-        ICommand _doBackGroundColor;
-
-        public ICommand DoBackGroundColor
+        public ICommand DoBackGroundColorMegosztott
         {
             get
             {
-                if (_doBackGroundColor == null)
+                if (_doBackGroundColor1 == null)
                 {
-                    _doBackGroundColor = new RelayCommand(CanDoBackGroundColor, DoBackGroundColorExecute);
+                    _doBackGroundColor1 = new RelayCommand(CanDoBackGroundColor, DoBackGroundColorExecuteMegosztott);
                 }
-                return _doBackGroundColor;
+                return _doBackGroundColor1;
+            }
+        }
+
+        public ICommand DoBackGroundColorSajat
+        {
+            get
+            {
+                if (_doBackGroundColor2 == null)
+                {
+                    _doBackGroundColor2 = new RelayCommand(CanDoBackGroundColor, DoBackGroundColorExecuteSajat);
+                }
+                return _doBackGroundColor2;
             }
         }
 
@@ -53,12 +66,17 @@ namespace monei_project.ViewModels
             return true;
         }
 
-        private void DoBackGroundColorExecute(object obj)
+        private void DoBackGroundColorExecuteMegosztott(object obj)
         {
-            BackGroundColor = "#000000";
+            BackGroundColor = "#52abbb";           
         }
 
-       
+        private void DoBackGroundColorExecuteSajat(object obj)
+        {
+            BackGroundColor = "#287497";
+            LabelList = sajatszamlak;
+        }
+
     }
 
 }

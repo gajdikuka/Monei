@@ -9,6 +9,26 @@
              d:DesignHeight="720" d:DesignWidth="360" FontFamily="Open Sans">
     <UserControl.Resources>
         <vm:MainJobbSavViewModel  x:Key="MainJobbSavViewModel"/>
+        <Style TargetType="{x:Type Button}" x:Key="myButtonStyle">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="Transparent" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </UserControl.Resources>
     <Grid DataContext="{Binding Source={StaticResource MainJobbSavViewModel}}">
         <Grid.ColumnDefinitions>
@@ -32,7 +52,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Rectangle Name="rect_statisztika" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Fill="#287497" MouseDown="rect_statisztika_MouseDown"></Rectangle>
+        <Button Name="rect_statisztika" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Background="#287497" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorStatisztika}"></Button>
         <Image  Grid.Column="1" Grid.Row="0" Source="/monei project;component/pictures/statisztika.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -43,7 +63,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Rectangle Name="rect_jogok" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Fill="#52abbb" MouseDown="rect_jogok_MouseDown"></Rectangle>
+        <Button Name="rect_jogok" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Background="#52abbb" Style="{StaticResource myButtonStyle}" Command="{Binding DoBackGroundColorJogok}"></Button>
         <Image  Grid.Column="4" Grid.Row="0" Source="/monei project;component/pictures/jogok.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -55,7 +75,7 @@
             </Image.RenderTransform>
         </Image>
 
-        <Grid Background="#287497" Name="menupontok" Grid.Row="1" Grid.RowSpan="10" Grid.ColumnSpan="6">
+        <Grid Background="{Binding Path=BackGroundColor}" Name="menupontok" Grid.Row="1" Grid.RowSpan="10" Grid.ColumnSpan="6">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
