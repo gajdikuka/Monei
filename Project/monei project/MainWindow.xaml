@@ -7,7 +7,7 @@
         xmlns:viewmodels="clr-namespace:monei_project.ViewModels"
         xmlns:views="clr-namespace:monei_project.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280"
+        Title="Monei" Height="720" Width="1280"
         MinHeight="720" MinWidth="1280">
     <Grid Name="maingrid">
     </Grid>

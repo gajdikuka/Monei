@@ -11,7 +11,6 @@ namespace monei_project.ViewModels
 {
     class MainFelsoViewModel : ViewModelBase
     {
-
         private string _balance = "11111$";
         public string Balance
         {

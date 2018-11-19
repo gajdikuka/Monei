@@ -36,7 +36,7 @@
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
         <Rectangle Grid.RowSpan="1" Grid.ColumnSpan="22" Fill="#013542"></Rectangle>
-        <Label  Grid.Column="6" Grid.ColumnSpan="2" VerticalAlignment="Center" Foreground="White" FontSize="16">Balance:</Label>
-        <Label x:Name="lblBalance" Grid.Column="7" Grid.ColumnSpan="5" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans SemiBold" FontSize="24" Margin="55,28,45,33" Content="{Binding Balance}"></Label>
+        <Label Grid.Column="6" Grid.ColumnSpan="2" VerticalAlignment="Center" Foreground="White" FontSize="16">Balance:</Label>
+        <Label x:Name="lblBalance" Grid.Column="8" Grid.ColumnSpan="5" VerticalAlignment="Center" Foreground="White" FontFamily="Open Sans SemiBold" FontSize="24" Content="{Binding Balance}"></Label>
     </Grid>
 </UserControl>

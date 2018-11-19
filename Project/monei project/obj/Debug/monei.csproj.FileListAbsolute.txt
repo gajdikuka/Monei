@@ -138,7 +138,6 @@ C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\Forg
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView2.g.cs
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView3.g.cs
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView4.g.cs
-C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\Main.g.cs
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\LoginView.g.cs
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\RegistrationView.g.cs
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\RegistrationView2.g.cs
@@ -151,7 +150,6 @@ C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\Forg
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView2.baml
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView3.baml
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\ForgottenPwdView4.baml
-C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\Main.baml
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\LoginView.baml
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\RegistrationView.baml
 C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\RegistrationView2.baml
@@ -476,3 +474,18 @@ C:\Users\anett\Desktop\Project\monei project\obj\Debug\monei_project.Properties.
 C:\Users\anett\Desktop\Project\monei project\obj\Debug\monei.csproj.GenerateResource.cache
 C:\Users\anett\Desktop\Project\monei project\obj\Debug\monei.csproj.CoreCompileInputs.cache
 C:\Users\anett\Desktop\Project\monei project\obj\Debug\monei.csproj.CopyComplete
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainUserSettings.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainFelsoView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainKozepsoView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainBalSavView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainDatagridView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainJobbSavView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainView.g.cs
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\App.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainUserSettings.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainFelsoView.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainKozepsoView.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainBalSavView.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainDatagridView.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainJobbSavView.baml
+C:\Users\Gajdi\Documents\GitHub\Monei\Project\monei project\obj\Debug\Views\MainView.baml
