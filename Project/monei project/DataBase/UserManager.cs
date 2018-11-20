@@ -29,7 +29,7 @@ namespace monei_project.DataBase
             connection.Close();
         }
 
-        public bool getUsername(string username)
+        public bool hasUsername(string username)
         {
             OracleConnection connection = getConnection();
             OracleCommand oracleCommand = new OracleCommand("Get_Username", connection);
