@@ -1,4 +1,5 @@
-﻿using System;
+﻿using monei_project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -8,8 +9,9 @@ using System.Windows.Controls;
 
 namespace monei_project.Rules
 {
-    public class CantBeNullRule : ValidationRule
+    class PasswordConfirmRule : ValidationRule
     {
+
         private string _errorMessage;
 
         public string ErrorMessage
@@ -20,18 +22,26 @@ namespace monei_project.Rules
 
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
+
             string charString = value as string;
+            
             if (charString != null)
             {
-                if (charString.Length == 0)
+                if (charString.Equals(GetPassword()))
                 {
                     return new ValidationResult(false, ErrorMessage);
                 }
                 return new ValidationResult(true, null);
             }
             else
-                return new ValidationResult(false, "Nem lehet üres");
+                return new ValidationResult(false, "A jelszó nem egyezik");
 
+        }
+
+        private string GetPassword()
+        {
+            RegistrationViewModel rv = new RegistrationViewModel();
+            return rv.Password;
         }
     }
 }

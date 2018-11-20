@@ -42,8 +42,6 @@ namespace monei_project.Views
             pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtLastName.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             txtForename.GetBindingExpression(TextBox.TextProperty).UpdateSource();
-            //txtSecurityQuestion.GetBindingExpression(TextBox.TextProperty).UpdateSource();
-            txtSecurityQuestion.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             txtAnswerToSecurityQuestion.GetBindingExpression(TextBox.TextProperty).UpdateSource();
 
             if (!txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
@@ -51,8 +49,6 @@ namespace monei_project.Views
             !pwdPasswordConformation.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
             !txtLastName.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
             !txtForename.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
-            //!txtSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
-            !txtSecurityQuestion.GetBindingExpression(ComboBox.SelectedValueProperty).HasValidationError &&
             !txtAnswerToSecurityQuestion.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
                 HasValidationError = true;

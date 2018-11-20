@@ -25,7 +25,7 @@ namespace monei_project.Rules
                 {
                     return new ValidationResult(true, null);
                 }
-                return new ValidationResult(false, this.ErrorMessage);
+                return new ValidationResult(false, ErrorMessage);
             }
             else
                 return new ValidationResult(false, "Nem lehet üres");

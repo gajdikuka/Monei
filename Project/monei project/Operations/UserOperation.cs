@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace monei_project.ViewModels
 {
-    public static class Globals
+    public static class UserOperation
     {
         public static string LoggedInUser = null;
+
+
     }
 }

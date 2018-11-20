@@ -82,7 +82,9 @@
     <Compile Include="DataBase\TransactionManager.cs" />
     <Compile Include="DataBase\UserManager.cs" />
     <Compile Include="Rules\CantBeNullIndexRule.cs" />
-    <Compile Include="ViewModels\Globals.cs" />
+    <Compile Include="Rules\PasswordConfirmRule.cs" />
+    <Compile Include="Operations\UserOperation.cs" />
+    <Compile Include="UI\BoundPasswordBox.cs" />
     <Compile Include="ViewModels\MainBalSavViewModel.cs" />
     <Compile Include="ViewModels\MainDatagridViewModel.cs" />
     <Compile Include="ViewModels\MainFelsoViewModel.cs" />

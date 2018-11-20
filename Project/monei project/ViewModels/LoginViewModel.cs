@@ -52,7 +52,7 @@ namespace monei_project.ViewModels
         {
             if (!GetHasValidationError())
             {
-                Globals.LoggedInUser = "Username";
+                UserOperation.LoggedInUser = "Username";
             }
         }
 

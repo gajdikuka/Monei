@@ -41,7 +41,7 @@ namespace monei_project.Views
             txtUsername.GetBindingExpression(TextBox.TextProperty).UpdateSource();
             pwdPassword.GetBindingExpression(TextBox.TextProperty).UpdateSource();
 
-            if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError && 
+            if (!pwdPassword.GetBindingExpression(TextBox.TextProperty).HasValidationError &&
                 !txtUsername.GetBindingExpression(TextBox.TextProperty).HasValidationError)
             {
                 HasValidationError = true;

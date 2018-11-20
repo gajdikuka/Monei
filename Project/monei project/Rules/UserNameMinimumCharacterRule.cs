@@ -22,7 +22,7 @@ namespace monei_project.Rules
             {
                 if (charString.Length < UserNameMinimumCharacter || charString.Length == 0)
                 {
-                    return new ValidationResult(false, this.ErrorMessage);
+                    return new ValidationResult(false, ErrorMessage);
                 }
                 return new ValidationResult(true, null);
             }

@@ -21,7 +21,7 @@ namespace monei_project.Rules
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             int index = int.Parse(value.ToString());
-            if (index != -1)
+            if (index == -1)
             {
                 return new ValidationResult(false, this.ErrorMessage);
             }

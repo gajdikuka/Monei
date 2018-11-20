@@ -19,7 +19,7 @@ namespace monei_project.ViewModels
             set { labelList = value; }
         }
 
-        private string _username = Globals.LoggedInUser;
+        private string _username = UserOperation.LoggedInUser;
         public string Username
         {
             get { return _username; }

@@ -8,12 +8,20 @@ namespace monei_project.Models
 {
     class User
     {
+        private int _id;
+
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
         private string _username;
 
         public string Username
         {
             get { return _username; }
-            set { _username = value; }//OnPropertyChanged(Username); }
+            set { _username = value; }
         }
 
         private string _forename;
@@ -21,7 +29,7 @@ namespace monei_project.Models
         public string Forename
         {
             get { return _forename; }
-            set { _forename = value; }//OnPropertyChanged(Forename); }
+            set { _forename = value; }
         }
 
         private string _lastName;
@@ -29,7 +37,7 @@ namespace monei_project.Models
         public string LastName
         {
             get { return _lastName; }
-            set { _lastName = value; }//OnPropertyChanged(LastName); }
+            set { _lastName = value; }
         }
 
         private string _password;
@@ -37,7 +45,7 @@ namespace monei_project.Models
         public string Password
         {
             get { return _password; }
-            set { _password = value; } //OnPropertyChanged(Password); }
+            set { _password = value; }
         }
 
         private int _securityQuestion;
@@ -45,7 +53,7 @@ namespace monei_project.Models
         public int SecurityQuestion
         {
             get { return _securityQuestion; }
-            set { _securityQuestion = value; }//OnPropertyChanged(SecurityQuestion); }
+            set { _securityQuestion = value; }
         }
 
         private string _answerToSecurityQuestion;
@@ -53,7 +61,7 @@ namespace monei_project.Models
         public string AnswerToSecurityQuestion
         {
             get { return _answerToSecurityQuestion; }
-            set { _answerToSecurityQuestion = value; }//OnPropertyChanged(AnswerToSecurityQuestion); }
+            set { _answerToSecurityQuestion = value; }
         }
 
         public User()
@@ -62,12 +70,23 @@ namespace monei_project.Models
         }
         public User(string username, string forename, string lastName, string password, int securityQuestion, string answerToSecurityQuestion)
         {
-            this.Username = username;
-            this.Forename = forename;
-            this.LastName = lastName;
-            this.Password = password;
-            this.SecurityQuestion = securityQuestion;
-            this.AnswerToSecurityQuestion = answerToSecurityQuestion;
+            Username = username;
+            Forename = forename;
+            LastName = lastName;
+            Password = password;
+            SecurityQuestion = securityQuestion;
+            AnswerToSecurityQuestion = answerToSecurityQuestion;
+        }
+
+        public User(int id, string username, string forename, string lastName, string password, int securityQuestion, string answerToSecurityQuestion)
+        {
+            Id = id;
+            Username = username;
+            Forename = forename;
+            LastName = lastName;
+            Password = password;
+            SecurityQuestion = securityQuestion;
+            AnswerToSecurityQuestion = answerToSecurityQuestion;
         }
     }
 }

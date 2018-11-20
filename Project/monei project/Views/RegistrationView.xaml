@@ -115,6 +115,7 @@
                 <Binding Path="PasswordConformation" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <rule:CantBeNullRule ErrorMessage="Nem Lehet üres" />
+                        <rule:PasswordConfirmRule ErrorMessage="A jelszó nem egyezik" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>

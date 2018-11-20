@@ -45,20 +45,20 @@ namespace monei_project.Models
 
         public Transaction(int transactionId, int accountId, int userId, string transactionName, string userNote, double crediting)
         {
-            this.transactionId = transactionId;
-            this.accountId = accountId;
-            this.userId = userId;
-            this.transactionName = transactionName;
-            this.userNote = userNote;
-            this.crediting = crediting;
+            TransactionId = transactionId;
+            AccountId = accountId;
+            UserId = userId;
+            TransactionName = transactionName;
+            UserNote = userNote;
+            Crediting = crediting;
         }
         public Transaction(int transactionId, int accountId, int userId, string transactionName, double crediting)
         {
-            this.transactionId = transactionId;
-            this.accountId = accountId;
-            this.userId = userId;
-            this.transactionName = transactionName;
-            this.crediting = crediting;
+            TransactionId = transactionId;
+            AccountId = accountId;
+            UserId = userId;
+            TransactionName = transactionName;
+            Crediting = crediting;
         }
     }
 }

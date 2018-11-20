@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:monei_project"
              xmlns:vm="clr-namespace:monei_project.ViewModels"
              xmlns:rule="clr-namespace:monei_project.Rules"
+             xmlns:ui="clr-namespace:monei_project.UI"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280" Name="alUO">
     <UserControl.Resources>
@@ -93,7 +94,7 @@
             </TextBox.Text>
         </TextBox>
         <Label x:Name="lblUsername" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="#FF8D8D8D" FontFamily="Open Sans SemiBold" FontSize="11" Margin="-4,-5,0,0">felhasználónév</Label>
-        <TextBox x:Name="pwdPassword" Style="{DynamicResource FocusVisual}" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="4" BorderThickness="0,0,0,1" VerticalAlignment="Bottom" BorderBrush="#FF5DC2D5" Foreground="Black" SelectionBrush="#FF5DC2D5" FontFamily="Open Sans SemiBold" FontSize="10">
+        <TextBox x:Name="pwdPassword" Style="{DynamicResource FocusVisual}" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="5" BorderThickness="0,0,0,1" VerticalAlignment="Bottom" BorderBrush="#FF5DC2D5" Foreground="Black" SelectionBrush="#FF5DC2D5" FontFamily="Open Sans SemiBold" FontSize="10" Margin="62,0,2,0">
             <TextBox.Text>
                 <Binding Path="Password" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
