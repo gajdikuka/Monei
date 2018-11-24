@@ -100,7 +100,7 @@ namespace monei_project.ViewModels
                     AnswerToSecurityQuestion = this.AnswerToSecurityQuestion,
                 };
                 UserManager userManager = new UserManager();
-                userManager.inserNewUser(user);
+                userManager.insertNewUser(user);
             }
         }
 

@@ -26,13 +26,13 @@ namespace monei_project.DataBase
         //    oracleCommand.ExecuteNonQuery();
         //    connection.Close();
         //}
-        public List<Account> getAccounts()
+        public List<Account> getAccounts(User user)
         {
             OracleConnection connection = getConnection();
             List<Account> list = new List<Account>();
             OracleCommand command = new OracleCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "SELECT * FROM monei_account";
+            command.CommandText = $"SELECT * FROM monei_account WHERE userid = {user.Id}";
             command.Connection = connection;
 
 

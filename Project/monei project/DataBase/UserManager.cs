@@ -12,7 +12,7 @@ namespace monei_project.DataBase
 {
     class UserManager : BaseDataBaseConnection
     {
-        public void inserNewUser(User user)
+        public void insertNewUser(User user)
         {
             OracleConnection connection = getConnection();
             OracleCommand oracleCommand = new OracleCommand();
@@ -75,6 +75,30 @@ namespace monei_project.DataBase
             string tmp = oracleCommand.Parameters["p_Password"].Value.ToString();
             connection.Close();
             return tmp;
+        }
+
+        public int getUserId(string username)
+        {
+            OracleConnection connection = getConnection();
+            OracleCommand oracleCommand = new OracleCommand("Get_UserId", connection);
+            oracleCommand.CommandType = CommandType.StoredProcedure;
+            oracleCommand.Parameters.Add("p_UserId", OracleDbType.Int16, 50, null, ParameterDirection.ReturnValue);
+            oracleCommand.Parameters.Add("p_Username", OracleDbType.Varchar2).Value = username;
+            oracleCommand.BindByName = true;
+
+            try
+            {
+                oracleCommand.ExecuteNonQuery();
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Exception Message: " + ex.Message);
+                MessageBox.Show("Exception Source: " + ex.Source);
+            }
+
+            int tmp = int.Parse(oracleCommand.Parameters["p_UserId"].Value.ToString());
+            connection.Close();
+            return tmp ;
         }
     }
 }

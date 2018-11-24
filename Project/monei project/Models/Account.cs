@@ -37,6 +37,11 @@ namespace monei_project.Models
             get { return ammount; }
             set { ammount = value; }
         }
+        public string CreateDate
+        {
+            get { return createDate; }
+            set { createDate = value; }
+        }
 
         public Account(int userId, string accountName, string currency, double ammount)
         {
