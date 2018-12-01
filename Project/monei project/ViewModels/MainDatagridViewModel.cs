@@ -8,5 +8,6 @@ namespace monei_project.ViewModels
 {
     class MainDatagridViewModel : ViewModelBase
     {
+
     }
 }

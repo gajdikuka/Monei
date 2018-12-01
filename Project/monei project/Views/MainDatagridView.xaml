@@ -11,6 +11,7 @@
         <vm:MainDatagridViewModel  x:Key="MainDatagridViewMode"/>
     </UserControl.Resources>
     <Grid DataContext="{Binding Source={StaticResource MainDatagridViewMode}}">
-            
+        <DataGrid Name="dg_Tarca">
+        </DataGrid>
     </Grid>
 </UserControl>
