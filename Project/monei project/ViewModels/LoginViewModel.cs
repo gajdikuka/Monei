@@ -1,5 +1,6 @@
 ﻿using monei_project.Commands;
 using monei_project.Models;
+using monei_project.Operations;
 using monei_project.Views;
 using System;
 using System.Collections.Generic;
@@ -52,7 +53,7 @@ namespace monei_project.ViewModels
         {
             if (!GetHasValidationError())
             {
-                UserOperation.LoggedInUser = "Username";
+                Globals.currentUser = Username;
             }
         }
 

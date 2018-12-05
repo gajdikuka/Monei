@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace monei_project.ViewModels
+namespace monei_project.Operations
 {
-    public static class UserOperation
+    public static class Globals
     {
-        public static string LoggedInUser = null;
-
-
+        public static string currentUser;
     }
 }
