@@ -12,7 +12,7 @@ namespace monei_project.DataBase
 {
     class UserManager : BaseDataBaseConnection
     {
-        public void insertNewUser(User user)
+        public void registrateNewUser(User user)
         {
             OracleConnection connection = getConnection();
             OracleCommand oracleCommand = new OracleCommand();
@@ -99,6 +99,37 @@ namespace monei_project.DataBase
             int tmp = int.Parse(oracleCommand.Parameters["p_UserId"].Value.ToString());
             connection.Close();
             return tmp ;
+        }
+        public User getUserByName(string username)
+        {
+            OracleConnection connection = getConnection();
+            OracleCommand command = new OracleCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = $"SELECT * FROM monei_user WHERE username = {username}";
+            command.Connection = connection;
+            User user = new User();
+            try
+            {
+                OracleDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    user.Id = int.Parse(reader["userid"].ToString());
+                    user.Username = reader["username"].ToString();
+                    user.LastName = reader["lastname"].ToString();
+                    user.Forename = reader["forename"].ToString();
+                    user.Password = reader["password"].ToString();
+                    user.SecurityQuestion = int.Parse(reader["securityquestion"].ToString());
+                    user.AnswerToSecurityQuestion = reader["securityanswer"].ToString();
+                }
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Exception Message: " + ex.Message);
+                MessageBox.Show("Exception Source: " + ex.Source);
+            }
+
+            connection.Close();
+            return user;
         }
     }
 }

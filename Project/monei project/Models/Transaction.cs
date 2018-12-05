@@ -60,5 +60,13 @@ namespace monei_project.Models
             TransactionName = transactionName;
             Crediting = crediting;
         }
+        public Transaction(int accountId, int userId, string transactionName, double crediting)
+        {
+            TransactionId = transactionId;
+            AccountId = accountId;
+            UserId = userId;
+            TransactionName = transactionName;
+            Crediting = crediting;
+        }
     }
 }
