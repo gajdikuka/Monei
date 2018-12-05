@@ -535,3 +535,6 @@ C:\Users\tesa3\Downloads\MONEi\GitHub\Monei\Project\monei project\obj\Debug\mone
 C:\Users\tesa3\Downloads\MONEi\GitHub\Monei\Project\monei project\obj\Debug\monei_project.Properties.Resources.resources
 C:\Users\tesa3\Downloads\MONEi\GitHub\Monei\Project\monei project\obj\Debug\monei.csproj.GenerateResource.Cache
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\App.baml
+C:\Users\tesa3\Downloads\MONEi\Project\monei project\bin\Debug\monei project.exe.config
+C:\Users\tesa3\Downloads\MONEi\Project\monei project\obj\Debug\monei project.exe
+C:\Users\tesa3\Downloads\MONEi\Project\monei project\obj\Debug\monei project.pdb
