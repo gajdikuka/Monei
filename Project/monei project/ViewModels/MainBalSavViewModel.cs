@@ -19,13 +19,6 @@ namespace monei_project.ViewModels
             set { labelList = value; }
         }
 
-        private string _username = UserOperation.LoggedInUser;
-        public string Username
-        {
-            get { return _username; }
-            set { _username = value; }
-        }
-
         private string _backGroundColor = "#287497";
 
         public string BackGroundColor

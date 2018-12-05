@@ -9,7 +9,7 @@ namespace monei_project.Models
     class Transaction
     {
         private int transactionId, accountId, userId;
-        private string transactionName, userNote;
+        private string transactionName, userNote, transactionDate;
         private double crediting;
 
         public int TransactionId
@@ -42,7 +42,11 @@ namespace monei_project.Models
             get { return crediting; }
             set { crediting = value; }
         }
-
+        public string TransactionDate
+        {
+            get { return transactionDate; }
+            set { transactionDate = value; }
+        }
         public Transaction(int transactionId, int accountId, int userId, string transactionName, string userNote, double crediting)
         {
             TransactionId = transactionId;
@@ -67,6 +71,9 @@ namespace monei_project.Models
             UserId = userId;
             TransactionName = transactionName;
             Crediting = crediting;
+        }
+        public Transaction()
+        {
         }
     }
 }

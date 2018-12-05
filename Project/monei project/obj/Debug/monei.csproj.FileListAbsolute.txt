@@ -286,7 +286,6 @@ E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\monei
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\bin\Debug\monei project.exe
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\bin\Debug\monei project.pdb
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\bin\Debug\Oracle.ManagedDataAccess.dll
-E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\monei.csprojResolveAssemblyReference.cache
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\Views\MainUserSettings.g.cs
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\Views\MainFelsoView.g.cs
 E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\Views\MainKozepsoView.g.cs
@@ -538,3 +537,5 @@ E:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\App.b
 C:\Users\tesa3\Downloads\MONEi\Project\monei project\bin\Debug\monei project.exe.config
 C:\Users\tesa3\Downloads\MONEi\Project\monei project\obj\Debug\monei project.exe
 C:\Users\tesa3\Downloads\MONEi\Project\monei project\obj\Debug\monei project.pdb
+e:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\monei.csproj.CoreCompileInputs.cache
+e:\Dokumentumok\Projekt\GiTHuB\Monei\Monei\Project\monei project\obj\Debug\monei.csproj.CopyComplete

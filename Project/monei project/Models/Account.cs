@@ -42,9 +42,9 @@ namespace monei_project.Models
             get { return createDate; }
             set { createDate = value; }
         }
-
-        public Account(int userId, string accountName, string currency, double ammount)
+        public Account(int accountId, int userId, string accountName, string currency, double ammount)
         {
+            AccountId = accountId;
             OwnerId = userId;
             AccountName = accountName;
             Currency = currency;
