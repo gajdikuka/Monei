@@ -50,6 +50,8 @@ namespace monei_project.Operations
             }
             else
             {
+                TransactionManager tm = new TransactionManager();
+                transaction = tm.getTransactions(account);
 
             }
         }
