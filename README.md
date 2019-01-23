@@ -1,2 +1,2 @@
 # Monei
-Budget manager shoftware. I created the UI.
+Budget manager software. My responsibility was creating the UI.
